@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1dle - Indovina il Pilota di F1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏎️ F1<span class="accent">dle</span></h1>
+    <p class="subtitle">Indovina il pilota di F1 del giorno</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Scrivi il nome di un pilota..."
+        autocomplete="off"
+      >
+      <div id="autocomplete-list" class="autocomplete-items"></div>
+    </div>
+
+    <div id="attempts-counter">Tentativi: <span id="attempts-count">0</span>/8</div>
+
+    <div class="grid-wrapper">
+      <div class="grid-header">
+        <div class="cell header-cell">Pilota</div>
+        <div class="cell header-cell">Nazionalità</div>
+        <div class="cell header-cell">Scuderia</div>
+        <div class="cell header-cell">Numero</div>
+        <div class="cell header-cell">Anno<br>Nascita</div>
+        <div class="cell header-cell">Campionati</div>
+      </div>
+      <div id="guesses-grid"></div>
+    </div>
+
+    <div id="game-result" class="hidden">
+      <p id="result-message"></p>
+      <button id="share-btn">📋 Condividi risultato</button>
+      <p id="copy-feedback" class="hidden">Copiato negli appunti!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Un nuovo pilota misterioso ogni giorno a mezzanotte 🌙</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
