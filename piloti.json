@@ -1,0 +1,82 @@
+[
+  {
+    "Nome": "Max Verstappen",
+    "Nazionalità": "Olandese",
+    "Scuderia": "Red Bull Racing",
+    "Numero": 1,
+    "AnnoNascita": 1997,
+    "CampionatiVinti": 3
+  },
+  {
+    "Nome": "Lewis Hamilton",
+    "Nazionalità": "Britannico",
+    "Scuderia": "Ferrari",
+    "Numero": 44,
+    "AnnoNascita": 1985,
+    "CampionatiVinti": 7
+  },
+  {
+    "Nome": "Charles Leclerc",
+    "Nazionalità": "Monegasco",
+    "Scuderia": "Ferrari",
+    "Numero": 16,
+    "AnnoNascita": 1997,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "Lando Norris",
+    "Nazionalità": "Britannico",
+    "Scuderia": "McLaren",
+    "Numero": 4,
+    "AnnoNascita": 1999,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "Fernando Alonso",
+    "Nazionalità": "Spagnolo",
+    "Scuderia": "Aston Martin",
+    "Numero": 14,
+    "AnnoNascita": 1981,
+    "CampionatiVinti": 2
+  },
+  {
+    "Nome": "Sergio Perez",
+    "Nazionalità": "Messicano",
+    "Scuderia": "Red Bull Racing",
+    "Numero": 11,
+    "AnnoNascita": 1990,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "George Russell",
+    "Nazionalità": "Britannico",
+    "Scuderia": "Mercedes",
+    "Numero": 63,
+    "AnnoNascita": 1998,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "Carlos Sainz",
+    "Nazionalità": "Spagnolo",
+    "Scuderia": "Williams",
+    "Numero": 55,
+    "AnnoNascita": 1994,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "Oscar Piastri",
+    "Nazionalità": "Australiano",
+    "Scuderia": "McLaren",
+    "Numero": 81,
+    "AnnoNascita": 2001,
+    "CampionatiVinti": 0
+  },
+  {
+    "Nome": "Pierre Gasly",
+    "Nazionalità": "Francese",
+    "Scuderia": "Alpine",
+    "Numero": 10,
+    "AnnoNascita": 1996,
+    "CampionatiVinti": 0
+  }
+]
