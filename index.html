@@ -9,10 +9,20 @@
 <body>
 
   <header>
-    <h1>🏎️ F1<span class="accent">dle</span></h1>
-    <p class="subtitle">Indovina il pilota di F1 del giorno</p>
-  </header>
+  <h1>🏎️ F1<span class="accent">dle</span></h1>
+  <p class="subtitle">Indovina il pilota di F1 del giorno</p>
+</header>
 
+<p class="rules">
+  Indovina il pilota misterioso in <strong>8 tentativi</strong>. Per ogni attributo:
+  <span class="legend correct">Verde</span> = corrispondenza esatta,
+  <span class="legend wrong">Rosso</span> = sbagliato.
+  Per i valori numerici (Anno, Numero, Campionati) una freccia ⬆️/⬇️ indica se il valore
+  corretto è maggiore o minore. Per i piloti ritirati, la <strong>Scuderia</strong> indica
+  l'ultima squadra in cui hanno corso e il <strong>Numero</strong> è quello più iconico della carriera.
+  Se la cella Scuderia è <span class="legend partial">Gialla</span>, il pilota segreto ha corso
+  in passato per quella scuderia, ma non è la sua ultima/attuale.
+</p>
   <main>
     <div class="search-container">
       <input
