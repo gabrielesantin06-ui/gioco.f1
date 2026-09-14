@@ -1,82 +1,47 @@
 [
-  {
-    "Nome": "Max Verstappen",
-    "Nazionalità": "Olandese",
-    "Scuderia": "Red Bull Racing",
-    "Numero": 1,
-    "AnnoNascita": 1997,
-    "CampionatiVinti": 3
-  },
-  {
-    "Nome": "Lewis Hamilton",
-    "Nazionalità": "Britannico",
-    "Scuderia": "Ferrari",
-    "Numero": 44,
-    "AnnoNascita": 1985,
-    "CampionatiVinti": 7
-  },
-  {
-    "Nome": "Charles Leclerc",
-    "Nazionalità": "Monegasco",
-    "Scuderia": "Ferrari",
-    "Numero": 16,
-    "AnnoNascita": 1997,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "Lando Norris",
-    "Nazionalità": "Britannico",
-    "Scuderia": "McLaren",
-    "Numero": 4,
-    "AnnoNascita": 1999,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "Fernando Alonso",
-    "Nazionalità": "Spagnolo",
-    "Scuderia": "Aston Martin",
-    "Numero": 14,
-    "AnnoNascita": 1981,
-    "CampionatiVinti": 2
-  },
-  {
-    "Nome": "Sergio Perez",
-    "Nazionalità": "Messicano",
-    "Scuderia": "Red Bull Racing",
-    "Numero": 11,
-    "AnnoNascita": 1990,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "George Russell",
-    "Nazionalità": "Britannico",
-    "Scuderia": "Mercedes",
-    "Numero": 63,
-    "AnnoNascita": 1998,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "Carlos Sainz",
-    "Nazionalità": "Spagnolo",
-    "Scuderia": "Williams",
-    "Numero": 55,
-    "AnnoNascita": 1994,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "Oscar Piastri",
-    "Nazionalità": "Australiano",
-    "Scuderia": "McLaren",
-    "Numero": 81,
-    "AnnoNascita": 2001,
-    "CampionatiVinti": 0
-  },
-  {
-    "Nome": "Pierre Gasly",
-    "Nazionalità": "Francese",
-    "Scuderia": "Alpine",
-    "Numero": 10,
-    "AnnoNascita": 1996,
-    "CampionatiVinti": 0
-  }
+  { "Nome": "Max Verstappen", "Nazionalità": "Olandese", "Scuderia": "Red Bull Racing", "ScuderiePassate": ["Toro Rosso"], "Numero": 1, "AnnoNascita": 1997, "CampionatiVinti": 4 },
+  { "Nome": "Lewis Hamilton", "Nazionalità": "Britannico", "Scuderia": "Ferrari", "ScuderiePassate": ["McLaren", "Mercedes"], "Numero": 44, "AnnoNascita": 1985, "CampionatiVinti": 7 },
+  { "Nome": "Charles Leclerc", "Nazionalità": "Monegasco", "Scuderia": "Ferrari", "ScuderiePassate": ["Sauber"], "Numero": 16, "AnnoNascita": 1997, "CampionatiVinti": 0 },
+  { "Nome": "Lando Norris", "Nazionalità": "Britannico", "Scuderia": "McLaren", "ScuderiePassate": [], "Numero": 4, "AnnoNascita": 1999, "CampionatiVinti": 0 },
+  { "Nome": "Oscar Piastri", "Nazionalità": "Australiano", "Scuderia": "McLaren", "ScuderiePassate": [], "Numero": 81, "AnnoNascita": 2001, "CampionatiVinti": 0 },
+  { "Nome": "George Russell", "Nazionalità": "Britannico", "Scuderia": "Mercedes", "ScuderiePassate": ["Williams"], "Numero": 63, "AnnoNascita": 1998, "CampionatiVinti": 0 },
+  { "Nome": "Carlos Sainz", "Nazionalità": "Spagnolo", "Scuderia": "Williams", "ScuderiePassate": ["Toro Rosso", "Renault", "McLaren", "Ferrari"], "Numero": 55, "AnnoNascita": 1994, "CampionatiVinti": 0 },
+  { "Nome": "Fernando Alonso", "Nazionalità": "Spagnolo", "Scuderia": "Aston Martin", "ScuderiePassate": ["Minardi", "Renault", "McLaren", "Ferrari", "Alpine"], "Numero": 14, "AnnoNascita": 1981, "CampionatiVinti": 2 },
+  { "Nome": "Sergio Perez", "Nazionalità": "Messicano", "Scuderia": "Red Bull Racing", "ScuderiePassate": ["Sauber", "McLaren", "Force India", "Racing Point"], "Numero": 11, "AnnoNascita": 1990, "CampionatiVinti": 0 },
+  { "Nome": "Pierre Gasly", "Nazionalità": "Francese", "Scuderia": "Alpine", "ScuderiePassate": ["Toro Rosso", "Red Bull", "AlphaTauri"], "Numero": 10, "AnnoNascita": 1996, "CampionatiVinti": 0 },
+  { "Nome": "Esteban Ocon", "Nazionalità": "Francese", "Scuderia": "Haas", "ScuderiePassate": ["Manor", "Force India", "Renault", "Alpine"], "Numero": 31, "AnnoNascita": 1996, "CampionatiVinti": 0 },
+  { "Nome": "Yuki Tsunoda", "Nazionalità": "Giapponese", "Scuderia": "Red Bull Racing", "ScuderiePassate": ["AlphaTauri", "RB"], "Numero": 22, "AnnoNascita": 2000, "CampionatiVinti": 0 },
+  { "Nome": "Alexander Albon", "Nazionalità": "Thailandese", "Scuderia": "Williams", "ScuderiePassate": ["Toro Rosso", "Red Bull"], "Numero": 23, "AnnoNascita": 1996, "CampionatiVinti": 0 },
+  { "Nome": "Lance Stroll", "Nazionalità": "Canadese", "Scuderia": "Aston Martin", "ScuderiePassate": ["Williams", "Racing Point"], "Numero": 18, "AnnoNascita": 1998, "CampionatiVinti": 0 },
+  { "Nome": "Nico Hulkenberg", "Nazionalità": "Tedesco", "Scuderia": "Sauber", "ScuderiePassate": ["Williams", "Force India", "Renault", "Haas"], "Numero": 27, "AnnoNascita": 1987, "CampionatiVinti": 0 },
+  { "Nome": "Kevin Magnussen", "Nazionalità": "Danese", "Scuderia": "Haas", "ScuderiePassate": ["McLaren", "Renault"], "Numero": 20, "AnnoNascita": 1992, "CampionatiVinti": 0 },
+  { "Nome": "Daniel Ricciardo", "Nazionalità": "Australiano", "Scuderia": "RB", "ScuderiePassate": ["Toro Rosso", "Red Bull", "Renault", "McLaren"], "Numero": 3, "AnnoNascita": 1989, "CampionatiVinti": 0 },
+  { "Nome": "Valtteri Bottas", "Nazionalità": "Finlandese", "Scuderia": "Sauber", "ScuderiePassate": ["Williams", "Mercedes"], "Numero": 77, "AnnoNascita": 1989, "CampionatiVinti": 0 },
+  { "Nome": "Zhou Guanyu", "Nazionalità": "Cinese", "Scuderia": "Sauber", "ScuderiePassate": [], "Numero": 24, "AnnoNascita": 1999, "CampionatiVinti": 0 },
+  { "Nome": "Logan Sargeant", "Nazionalità": "Statunitense", "Scuderia": "Williams", "ScuderiePassate": [], "Numero": 2, "AnnoNascita": 2000, "CampionatiVinti": 0 },
+
+  { "Nome": "Sebastian Vettel", "Nazionalità": "Tedesco", "Scuderia": "Aston Martin", "ScuderiePassate": ["Toro Rosso", "Red Bull", "Ferrari"], "Numero": 5, "AnnoNascita": 1987, "CampionatiVinti": 4 },
+  { "Nome": "Kimi Raikkonen", "Nazionalità": "Finlandese", "Scuderia": "Alfa Romeo", "ScuderiePassate": ["Sauber", "McLaren", "Ferrari", "Lotus"], "Numero": 7, "AnnoNascita": 1979, "CampionatiVinti": 1 },
+  { "Nome": "Nico Rosberg", "Nazionalità": "Tedesco", "Scuderia": "Mercedes", "ScuderiePassate": ["Williams"], "Numero": 6, "AnnoNascita": 1985, "CampionatiVinti": 1 },
+  { "Nome": "Jenson Button", "Nazionalità": "Britannico", "Scuderia": "McLaren", "ScuderiePassate": ["Williams", "Benetton", "BAR", "Honda", "Brawn GP"], "Numero": 22, "AnnoNascita": 1980, "CampionatiVinti": 1 },
+  { "Nome": "Felipe Massa", "Nazionalità": "Brasiliano", "Scuderia": "Williams", "ScuderiePassate": ["Sauber", "Ferrari"], "Numero": 19, "AnnoNascita": 1981, "CampionatiVinti": 0 },
+  { "Nome": "Romain Grosjean", "Nazionalità": "Francese", "Scuderia": "Haas", "ScuderiePassate": ["Renault", "Lotus"], "Numero": 8, "AnnoNascita": 1986, "CampionatiVinti": 0 },
+  { "Nome": "Marcus Ericsson", "Nazionalità": "Svedese", "Scuderia": "Sauber", "ScuderiePassate": ["Caterham"], "Numero": 9, "AnnoNascita": 1990, "CampionatiVinti": 0 },
+  { "Nome": "Pastor Maldonado", "Nazionalità": "Venezuelano", "Scuderia": "Lotus", "ScuderiePassate": ["Williams"], "Numero": 13, "AnnoNascita": 1985, "CampionatiVinti": 0 },
+
+  { "Nome": "Ayrton Senna", "Nazionalità": "Brasiliano", "Scuderia": "Williams", "ScuderiePassate": ["Toleman", "Lotus", "McLaren"], "Numero": 2, "AnnoNascita": 1960, "CampionatiVinti": 3 },
+  { "Nome": "Alain Prost", "Nazionalità": "Francese", "Scuderia": "Williams", "ScuderiePassate": ["McLaren", "Renault", "Ferrari"], "Numero": 2, "AnnoNascita": 1955, "CampionatiVinti": 4 },
+  { "Nome": "Michael Schumacher", "Nazionalità": "Tedesco", "Scuderia": "Mercedes", "ScuderiePassate": ["Jordan", "Benetton", "Ferrari"], "Numero": 5, "AnnoNascita": 1969, "CampionatiVinti": 7 },
+  { "Nome": "Niki Lauda", "Nazionalità": "Austriaco", "Scuderia": "McLaren", "ScuderiePassate": ["March", "BRM", "Ferrari", "Brabham"], "Numero": 1, "AnnoNascita": 1949, "CampionatiVinti": 3 },
+  { "Nome": "Juan Manuel Fangio", "Nazionalità": "Argentino", "Scuderia": "Maserati", "ScuderiePassate": ["Alfa Romeo", "Mercedes", "Ferrari"], "Numero": 1, "AnnoNascita": 1911, "CampionatiVinti": 5 },
+  { "Nome": "Jim Clark", "Nazionalità": "Britannico", "Scuderia": "Lotus", "ScuderiePassate": [], "Numero": 1, "AnnoNascita": 1936, "CampionatiVinti": 2 },
+  { "Nome": "Jackie Stewart", "Nazionalità": "Britannico", "Scuderia": "Tyrrell", "ScuderiePassate": ["BRM", "Matra"], "Numero": 1, "AnnoNascita": 1939, "CampionatiVinti": 3 },
+  { "Nome": "James Hunt", "Nazionalità": "Britannico", "Scuderia": "McLaren", "ScuderiePassate": ["Hesketh", "Wolf"], "Numero": 1, "AnnoNascita": 1947, "CampionatiVinti": 1 },
+  { "Nome": "Nelson Piquet", "Nazionalità": "Brasiliano", "Scuderia": "Benetton", "ScuderiePassate": ["Brabham", "Williams"], "Numero": 1, "AnnoNascita": 1952, "CampionatiVinti": 3 },
+  { "Nome": "Nigel Mansell", "Nazionalità": "Britannico", "Scuderia": "McLaren", "ScuderiePassate": ["Lotus", "Williams", "Ferrari"], "Numero": 5, "AnnoNascita": 1953, "CampionatiVinti": 1 },
+  { "Nome": "Damon Hill", "Nazionalità": "Britannico", "Scuderia": "Jordan", "ScuderiePassate": ["Williams", "Arrows"], "Numero": 0, "AnnoNascita": 1960, "CampionatiVinti": 1 },
+  { "Nome": "Mika Hakkinen", "Nazionalità": "Finlandese", "Scuderia": "McLaren", "ScuderiePassate": ["Lotus"], "Numero": 1, "AnnoNascita": 1968, "CampionatiVinti": 2 },
+  { "Nome": "Gilles Villeneuve", "Nazionalità": "Canadese", "Scuderia": "Ferrari", "ScuderiePassate": ["McLaren"], "Numero": 27, "AnnoNascita": 1950, "CampionatiVinti": 0 },
+  { "Nome": "Emerson Fittipaldi", "Nazionalità": "Brasiliano", "Scuderia": "Copersucar Fittipaldi", "ScuderiePassate": ["Lotus", "McLaren"], "Numero": 1, "AnnoNascita": 1946, "CampionatiVinti": 2 },
+  { "Nome": "Jack Brabham", "Nazionalità": "Australiano", "Scuderia": "Brabham", "ScuderiePassate": ["Cooper"], "Numero": 1, "AnnoNascita": 1926, "CampionatiVinti": 3 }
 ]
