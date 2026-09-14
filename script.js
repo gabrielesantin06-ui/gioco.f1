@@ -4,7 +4,6 @@ let piloti = [];
 let secretPilot = null;
 let guesses = [];
 let gameOver = false;
-let selectedAutocompleteIndex = -1;
 
 const searchInput = document.getElementById('search-input');
 const autocompleteList = document.getElementById('autocomplete-list');
@@ -38,7 +37,7 @@ async function init() {
 /* -------- Selezione pilota del giorno (deterministica per tutti) -------- */
 function getPilotaDelGiorno(lista) {
   const oggi = new Date();
-  const dataRif = new Date(2024, 0, 1); // punto di riferimento fisso
+  const dataRif = new Date(2024, 0, 1);
   const diffGiorni = Math.floor((oggi.setHours(0,0,0,0) - dataRif.setHours(0,0,0,0)) / 86400000);
   const index = ((diffGiorni % lista.length) + lista.length) % lista.length;
   return lista[index];
@@ -49,12 +48,11 @@ function getTodayKey() {
   return `f1dle-${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
 }
 
-/* -------- Persistenza (localStorage, reset automatico a mezzanotte) -------- */
+/* -------- Persistenza -------- */
 function loadState() {
   const key = getTodayKey();
   const saved = localStorage.getItem(key);
 
-  // Pulisce eventuali salvataggi di giorni precedenti
   Object.keys(localStorage)
     .filter(k => k.startsWith('f1dle-') && k !== key)
     .forEach(k => localStorage.removeItem(k));
@@ -78,7 +76,6 @@ function saveState() {
 function onSearchInput() {
   const query = searchInput.value.trim().toLowerCase();
   autocompleteList.innerHTML = '';
-  selectedAutocompleteIndex = -1;
 
   if (!query || gameOver) return;
 
@@ -140,7 +137,7 @@ function renderGuessRow(pilot) {
 
   row.appendChild(makeCell(pilot.Nome, pilot.Nome === secretPilot.Nome ? 'correct' : 'wrong'));
   row.appendChild(makeCell(pilot.Nazionalità, pilot.Nazionalità === secretPilot.Nazionalità ? 'correct' : 'wrong'));
-  row.appendChild(makeCell(pilot.Scuderia, pilot.Scuderia === secretPilot.Scuderia ? 'correct' : 'wrong'));
+  row.appendChild(makeScuderiaCell(pilot.Scuderia));
   row.appendChild(makeNumericCell(pilot.Numero, secretPilot.Numero));
   row.appendChild(makeNumericCell(pilot.AnnoNascita, secretPilot.AnnoNascita));
   row.appendChild(makeNumericCell(pilot.CampionatiVinti, secretPilot.CampionatiVinti));
@@ -153,6 +150,27 @@ function makeCell(text, statusClass) {
   cell.className = `cell ${statusClass}`;
   cell.textContent = text;
   return cell;
+}
+
+/**
+ * Cella "Scuderia" con logica a 3 stati:
+ * - Verde: match esatto con la scuderia attuale/ultima del pilota segreto
+ * - Giallo: la scuderia indovinata compare tra le ScuderiePassate del pilota segreto
+ * - Rosso: nessuna corrispondenza
+ */
+function makeScuderiaCell(guessScuderia) {
+  let statusClass = 'wrong';
+
+  if (guessScuderia === secretPilot.Scuderia) {
+    statusClass = 'correct';
+  } else if (
+    Array.isArray(secretPilot.ScuderiePassate) &&
+    secretPilot.ScuderiePassate.includes(guessScuderia)
+  ) {
+    statusClass = 'partial';
+  }
+
+  return makeCell(guessScuderia, statusClass);
 }
 
 function makeNumericCell(guessValue, secretValue) {
@@ -197,7 +215,7 @@ function shareResult() {
   const lines = guesses.map(g => {
     const nome = g.Nome === secretPilot.Nome ? '🟩' : '🟥';
     const naz = g.Nazionalità === secretPilot.Nazionalità ? '🟩' : '🟥';
-    const scud = g.Scuderia === secretPilot.Scuderia ? '🟩' : '🟥';
+    const scud = scuderiaSquare(g.Scuderia);
     const num = numericSquare(g.Numero, secretPilot.Numero);
     const anno = numericSquare(g.AnnoNascita, secretPilot.AnnoNascita);
     const camp = numericSquare(g.CampionatiVinti, secretPilot.CampionatiVinti);
@@ -212,6 +230,14 @@ function shareResult() {
   }).catch(() => {
     alert('Impossibile copiare automaticamente. Ecco il risultato:\n\n' + text);
   });
+}
+
+function scuderiaSquare(guessScuderia) {
+  if (guessScuderia === secretPilot.Scuderia) return '🟩';
+  if (Array.isArray(secretPilot.ScuderiePassate) && secretPilot.ScuderiePassate.includes(guessScuderia)) {
+    return '🟨';
+  }
+  return '🟥';
 }
 
 function numericSquare(guessValue, secretValue) {
